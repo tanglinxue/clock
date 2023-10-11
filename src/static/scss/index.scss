@@ -1,0 +1,310 @@
+$backColor: #f7f7f7;
+$maiBlack: #111111;
+$black: #333333;
+$greenColor: #439AAF;
+$gray: #919191;
+$orange: #FF824E;
+$border:#F0F0F0;
+$lightBlue:rgba(67, 154, 175, 0.13);
+$newGray:#707070;
+
+// 颜色
+.green{
+	color:$greenColor
+}
+.lightBlue{
+	color:$lightBlue
+}
+.orange{
+	color:$orange !important
+}
+.black{
+	color:$maiBlack !important
+}
+.gray{
+	color:$gray
+}
+.red{
+	color:red
+}
+view,
+text,scroll-view ,button,
+input{
+	box-sizing: border-box;
+}
+
+button,
+input {
+	background: transparent;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	padding: 0 !important;
+	margin-left: 0;
+	margin-right: 0;
+	overflow: visible;
+	border-radius: 0;
+	border: none;
+	font-weight: normal !important;
+	min-height: 0 !important;
+}
+uni-button:after{
+	border:none !important;
+}
+a{
+	color:$maiBlack !important;
+	text-decoration: none;
+}
+// hover透明
+.opacity {
+	opacity: 0.8;
+}
+
+// 排版
+.row-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.row-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.row-between-a {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.row-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+.row-start-a {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.row-end {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.column-center-a {
+	display: flex;
+	flex-direction: column;
+}
+.column-center-b {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+.column-center-c {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+
+
+// 省略号
+.textElis {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+// 二行省略
+.textElis2 {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: box;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: break-all;
+}
+
+// 距离
+.mgt20 {
+	margin-top: 20rpx !important;
+}
+.mgl20 {
+	margin-left: 20rpx;
+}
+.mgl15 {
+	margin-left: 15rpx;
+}
+.mgl10 {
+	margin-left: 10rpx;
+}
+.mgb10 {
+	margin-bottom: 10rpx;
+}
+.mgb15{
+	margin-bottom: 15rpx;
+}
+
+.mgb20 {
+	margin-bottom: 20rpx !important;
+}
+.mgb30 {
+	margin-bottom: 30rpx;
+}
+.mgb40{
+	margin-bottom: 40rpx;
+}
+.mgb50{
+	margin-bottom: 50rpx;
+}
+.mgr5 {
+	margin-right: 5rpx;
+}
+.mgr10 {
+	margin-right: 10rpx;
+}
+.mgr15 {
+	margin-right: 15rpx;
+}
+.mgr30 {
+	margin-right: 30rpx;
+}
+.mgr40 {
+	margin-right: 40rpx;
+}
+
+// 下划线
+.borderbottom {
+	border-bottom: 1px solid #f0f0f0;
+}
+.bordertop {
+	border-top: 1px solid #2a2a2a;
+}
+
+// 字体大小
+.font32 {
+	font-size: 32rpx;
+}
+.font26{
+	font-size: 26rpx;
+}
+.font22{
+	font-size: 22rpx !important;
+}
+.font30 {
+	font-size: 30rpx !important;
+}
+.weight{
+	font-weight: bold;
+}
+
+// 按钮
+.greenbtn {
+	width: 164rpx;
+	height: 68rpx;
+	line-height: 68rpx;
+	background: $greenColor;
+	border-radius: 34rpx;
+	text-align: center;
+	color: #fff;
+	font-size: 28rpx;
+}
+.main-btn {
+	width: 710rpx;
+	height: 100rpx;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: $greenColor;
+	border-radius: 50rpx;
+	font-size: 36rpx;
+	font-weight: bold;
+}
+
+.boxOuter{
+	width:100%;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 8rpx 0px rgba(218, 218, 218, 0.5);
+	border-radius: 12rpx;
+	margin-bottom:20rpx;
+	padding:20rpx;
+}
+.animation-img{
+	animation-name: scaleDraw; /*关键帧名称*/
+	animation-timing-function: ease-in-out; /*动画的速度曲线*/
+	animation-iteration-count: infinite;  /*动画播放的次数*/
+	animation-duration: 2s; /*动画所花费的时间*/
+}
+@keyframes scaleDraw {  /*定义关键帧、scaleDrew是需要绑定到选择器的关键帧名称*/
+    0%{
+		transform: scale(1);  /*开始为原始大小*/
+    }
+    25%{
+        transform: scale(1.1); /*放大1.1倍*/
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+}
+
+.newSmallGrayBtn{
+	width: 112rpx;
+	height: 52rpx;
+	border-radius: 26rpx;
+	border: 1px solid $newGray;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color:$newGray;
+	font-size:26rpx
+}
+.newSmallBlackBtn{
+	width: 112rpx;
+	height: 52rpx;
+	border-radius: 26rpx;
+	border: 1px solid $maiBlack;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color:$maiBlack;
+	font-size:26rpx
+}
+.new-main-btn {
+	width: 710rpx;
+	height: 100rpx;
+	color: #676767;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #D3D3D3;
+	border-radius: 50rpx;
+	font-size: 36rpx;
+}
+.flex1{
+	flex:1
+}

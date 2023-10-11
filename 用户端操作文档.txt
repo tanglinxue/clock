@@ -1,0 +1,15 @@
+需要域名替换的地方:
+src/utils/wx.js
+src/pages/home/login
+src/config/index.js
+
+打包命令npm run build
+
+上传h5的打包后的代码地址dist/build/h5把这个扔ftp
+
+开发运行，直接通过hbulder运行到浏览器
+ios 的 appid : wx1ce315eefa0467ed
+Bundle ID：com.lespa.cn.user
+测试私钥 Web4614926
+
+android的appid:wxcfe2dde42aaae9fc
